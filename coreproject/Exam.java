@@ -52,6 +52,26 @@ public static void Student() {
 		{
 			sname="Kavya";
 		}
+		else if(regno==6)
+		{
+			sname="hari";
+		}
+		else if(regno==7)
+		{
+			sname="sri";
+		}
+		else if(regno==8)
+		{
+			sname="jeya";
+		}
+		else if(regno==9)
+		{
+			sname="divya";
+		}
+		else if(regno==10)
+		{
+			sname="hari";
+		}
 		else
 		{
 			System.out.println("Enter valid Register number");
@@ -74,7 +94,7 @@ public static void Student() {
 			
 			ans=Logic(roll);
 			
-			Result(ans);
+			Result(ans, sname);
 			
 		}
 		else//(decide.equalsIgnoreCase("N"))
@@ -136,39 +156,14 @@ public static int[] Logic(int[] roll) {
 
 public int regno;
 public int Ans;	
-public static void Result(int[] ans){
+public static void Result(int[] ans, String name){
 
 		
 		int totalcount=5,diff;
 		int Ans=ans[0];
 		int reg=ans[1];
-		String sname = null;
+		String sname = name;
 		
-		if(reg==1)
-		{
-			sname="Jeyasree";
-		}
-		else if(reg==2)
-		{
-			sname="Hariharan";
-		}
-		else if(reg==3)
-		{
-			sname="Abisha";
-		}
-		else if(reg==4)
-		{
-			sname="Jemisha";
-		}
-		else if(reg==5)
-		{
-			sname="Kavya";
-		}
-		else
-		{
-			System.out.println("unknown regnumber");
-			
-		}
 		System.out.println("===================================");
 		System.out.println();
 		System.out.println("\n Student name is : "+sname);
